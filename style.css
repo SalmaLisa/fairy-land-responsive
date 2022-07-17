@@ -1,0 +1,71 @@
+body{
+  max-width: 1340px;
+  margin: 0 auto;
+  background-color: #000000eb;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+  grid-gap: 30px;
+  margin: 20px;
+
+}
+.fairy-girl img{
+  width: 100%;  
+}
+.fairy-girl p{
+  font-style: italic;
+  color: #acb1e8 ;
+}
+.fairy-girl h1,h1{
+  color: #3846e0 ;
+  font-family: cursive;
+  font-style: italic;
+}
+.title{
+  color: #c3c4d5 ;
+  text-align: center;
+  font-size: 3em;
+}
+.fairy-girl button{
+  padding: 7px 13px;
+  background-color: #3846e0;
+  color: aliceblue;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+.fairy-girl{
+  padding: 20px;
+  box-shadow: 8px -5px 20px gray;
+  border-radius: 20px;
+}
+@media screen and (max-width:576px){
+  .container{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+  }
+}
+@media screen and (min-width:577px)and (max-width:992px){
+  .container{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .fairy-girl h1{
+    font-size: 22px;
+  }
+  .fairy-girl p{
+    font-size: 13px;
+  }
+  .fairy-girl button{
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+}
+@media screen and (min-width:993px)and (max-width:1074px){
+  .fairy-girl h1{
+    font-size: 28px;
+  }
+}
